@@ -5,12 +5,12 @@ To run this code successfully without any failures, follow the steps below:
 Create an Azure Account
 
 Set up an Azure Storage Account:
-Create a storage account named gsynergydatastore.
-Inside it, create a container named raw-data.
-Upload all the challenge assets to the raw-data container in .dlm.gz format.
+Create a storage account named **gsynergydatastore**.
+Inside it, create a container named **raw-data**.
+Upload all the challenge assets to the **raw-data** container in **.dlm.gz** format.
 
 Create an Azure Databricks Service:
-Name it gsynergy-databricks.
+Name it **gsynergy-databricks**.
 Launch the service after creation.
 
 Set up the Workspace in Databricks:
@@ -23,10 +23,10 @@ SecretsNotebook
 
 Retrieve the Storage Account Access Key:
 Go to Security + Networking → Access Keys in the Azure portal.
-Copy the access key for gsynergydatastore.
+Copy the access key for **gsynergydatastore**.
 
 Update the Secrets Notebook:
-Replace storage_account_key with the access key obtained in the previous step.
+Replace storage_account_key with the access key for **gsynergydatastore** storage account.
 
 Run the Transformation Notebook:
 This will automount the storage and transform the data as required for the challenge.
